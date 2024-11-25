@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 1rem;
+    text-align: right;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.intro {
+    text-align: center;
+    padding: 3rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#about, #projects {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+#skills {
+    color: purple; /* Set the text color of skills to purple */
+    font-weight: bold; /* Make the skills bold for better emphasis */
+}
