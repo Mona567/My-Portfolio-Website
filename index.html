@@ -14,9 +14,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -31,12 +31,12 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="content-section">
             <h2>About Me</h2>
             <p>I am a dedicated individual who enjoys taking on challenging projects that help me apply and enhance my skills. I am committed to continuous learning and always looking for opportunities to grow in the tech field.</p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="content-section">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Covid Vaccination Management System</h3>
@@ -47,10 +47,16 @@
                 <p>A web application for managing events with role-based access control for admins and users, built using HTML, Python, and Flask.</p>
             </div>
         </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out:</p>
+            <p>📞 7992306324</p>
+            <p>✉ <a href="mailto:monajaiswal1192000@gmail.com">monajaiswal1192000@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/mona-jaiswal-17372b1b6" target="_blank">LinkedIn Profile</a></p>
+        </section>
     </main>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
