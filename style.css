@@ -10,12 +10,7 @@ body {
 header {
     background-color: #2e2e2e;
     padding: 1rem;
-    text-align: right;
-}
-
-.contact-info {
-    font-size: 0.9rem;
-    text-align: left;
+    text-align: center;
 }
 
 nav ul {
@@ -30,10 +25,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: lightblue; /* Change navigation link color to light blue */
     text-decoration: none;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white; /* Highlight effect on hover */
 }
 
 .intro {
@@ -45,6 +45,10 @@ h1, h2 {
     margin-bottom: 1rem;
 }
 
+h1 .highlight {
+    color: yellow; /* Change 'Mona Jaiswal' color to yellow */
+}
+
 .buttons {
     margin-top: 1rem;
 }
@@ -53,11 +57,16 @@ h1, h2 {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.8rem 1.2rem;
-    background-color: #4CAF50;
+    background-color: purple; /* Change button color to purple */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6a1b9a; /* Darker purple for hover effect */
 }
 
 .content-section {
@@ -68,6 +77,6 @@ h1, h2 {
 }
 
 #skills {
-    color: purple; /* Set the text color of skills to purple */
-    font-weight: bold; /* Make the skills bold for better emphasis */
+    color: green; /* Change skills color to green */
+    font-weight: bold; /* Keep bold for emphasis */
 }
