@@ -10,4 +10,14 @@ function rotateSkills() {
     setTimeout(rotateSkills, 2000);
 }
 
-window.onload = rotateSkills;
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+    });
+}
+
+window.onload = () => {
+    rotateSkills();
+    showSection('about'); // Show 'About' section by default on page load
+};
