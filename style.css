@@ -33,6 +33,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .intro {
@@ -59,14 +60,11 @@ h1, h2 {
     font-weight: bold;
 }
 
-#about, #projects {
+.content-section {
+    display: none; /* Hide all content sections by default */
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
-}
-
-.project {
-    margin-bottom: 2rem;
 }
 
 #skills {
