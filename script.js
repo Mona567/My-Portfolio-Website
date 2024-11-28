@@ -1,3 +1,4 @@
+// Rotating skills
 const skills = [
     "Python", "Java", "SQL", "MySQL", "database management",
     "Flask", "HTML", "CSS", "Git", "GitHub", "DSA", "DBMS", "OOP"
@@ -10,4 +11,20 @@ function rotateSkills() {
     setTimeout(rotateSkills, 2000);
 }
 
-window.onload = rotateSkills;
+// Show specific sections
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('main > section');
+    sections.forEach((section) => {
+        if (section.id === sectionId) {
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    });
+}
+
+// Initialize on page load
+window.onload = function() {
+    rotateSkills();
+    showSection('about'); // Default section to show
+};
