@@ -1,30 +1,28 @@
 // Rotating skills
-const skills = [
-    "Python", "Java", "SQL", "MySQL", "database management",
-    "Flask", "HTML", "CSS", "Git", "GitHub", "DSA", "DBMS", "OOP"
-];
+const skills = ["Python", "Java", "SQL", "OOP", "HTML", "CSS", "DSA"];
 let skillIndex = 0;
 
 function rotateSkills() {
-    document.getElementById('skills').textContent = skills[skillIndex];
+    document.getElementById("skills").textContent = skills[skillIndex];
     skillIndex = (skillIndex + 1) % skills.length;
     setTimeout(rotateSkills, 2000);
 }
 
-// Show specific sections
+// Show specific section
 function showSection(sectionId) {
-    const sections = document.querySelectorAll('main > section');
-    sections.forEach((section) => {
-        if (section.id === sectionId) {
-            section.classList.remove('hidden');
-        } else {
-            section.classList.add('hidden');
-        }
-    });
+    // Hide all sections
+    const sections = document.querySelectorAll("main section");
+    sections.forEach(section => section.classList.add("hidden"));
+
+    // Show selected section
+    const sectionToShow = document.getElementById(sectionId);
+    if (sectionToShow) {
+        sectionToShow.classList.remove("hidden");
+    }
 }
 
-// Initialize on page load
-window.onload = function() {
+// Initialize
+window.onload = function () {
     rotateSkills();
-    showSection('about'); // Default section to show
+    showSection("about"); // Default to "About"
 };

@@ -1,48 +1,50 @@
+/* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #121212;
-    color: #fff;
-}
-
-header {
-    background-color: #2e2e2e;
-    padding: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
+/* Navigation Bar */
+header nav ul {
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    list-style: none;
+    padding: 10px;
+    background-color: #222;
 }
 
-nav ul li {
-    margin: 0 1rem;
+header nav ul li {
+    margin: 0 20px;
 }
 
-nav ul li a {
-    color: lightblue;
+header nav ul li a {
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+    color: lightblue;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: white;
 }
 
-.intro {
-    text-align: center;
-    padding: 3rem;
+/* Intro Section */
+.intro h1 {
+    font-size: 2.5em;
+    margin-top: 50px;
 }
 
-h1, h2 {
-    margin-bottom: 1rem;
+.intro h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .buttons a {
@@ -54,28 +56,30 @@ h1, h2 {
     color: #fff;
     background-color: purple;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .buttons a:hover {
     background-color: #fff;
     color: purple;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Sections */
 .hidden {
     display: none;
 }
 
-#about, #projects, #contact {
-    padding: 2rem;
-    margin: 2rem auto;
+section {
+    margin: 30px auto;
+    padding: 20px;
     max-width: 800px;
 }
 
-.project {
-    margin-bottom: 2rem;
-}
-
-#skills {
-    font-weight: bold;
+/* Contact Section */
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
