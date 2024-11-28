@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(36, 36, 239); /* Change navigation link color to light blue */
+    color: lightblue; /* Navigation link color */
     text-decoration: none;
     font-size: 1.1rem;
     cursor: pointer;
@@ -57,7 +57,7 @@ h1 .highlight {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.8rem 1.2rem;
-    background-color: purple; /* Change button color to purple */
+    background-color: purple; /* Button color */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -66,17 +66,37 @@ h1 .highlight {
 }
 
 .btn:hover {
-    background-color: #6a1b9a; /* Darker purple for hover effect */
+    background-color: #6a1b9a; /* Darker purple on hover */
 }
 
 .content-section {
-    display: none; /* Hide all content sections by default */
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
 }
 
+#contact p {
+    margin-bottom: 0.5rem; /* Space between contact items */
+}
+
+#contact p a {
+    color: lightblue; /* Link color in contact section */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact p a:hover {
+    color: white; /* Highlight effect on hover */
+}
+
+#contact .icon {
+    width: 20px; /* Size of LinkedIn icon */
+    height: 20px;
+    vertical-align: middle; /* Align icon with text */
+    margin-right: 8px; /* Space between icon and text */
+}
+
 #skills {
-    color: green; /* Change skills color to green */
-    font-weight: bold; /* Keep bold for emphasis */
+    color: green; /* Skills color */
+    font-weight: bold;
 }
