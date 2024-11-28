@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: lightblue; /* Navigation link color */
+    color: lightblue;
     text-decoration: none;
     font-size: 1.1rem;
     cursor: pointer;
@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white; /* Highlight effect on hover */
+    color: white;
 }
 
 .intro {
@@ -46,7 +46,7 @@ h1, h2 {
 }
 
 h1 .highlight {
-    color: yellow; /* Change 'Mona Jaiswal' color to yellow */
+    color: yellow;
 }
 
 .buttons {
@@ -57,7 +57,7 @@ h1 .highlight {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.8rem 1.2rem;
-    background-color: purple; /* Button color */
+    background-color: purple;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -66,37 +66,38 @@ h1 .highlight {
 }
 
 .btn:hover {
-    background-color: #6a1b9a; /* Darker purple on hover */
+    background-color: #6a1b9a;
 }
 
 .content-section {
+    display: none; /* Hidden by default */
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
 }
 
 #contact p {
-    margin-bottom: 0.5rem; /* Space between contact items */
+    margin-bottom: 0.5rem;
 }
 
 #contact p a {
-    color: lightblue; /* Link color in contact section */
+    color: lightblue;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 #contact p a:hover {
-    color: white; /* Highlight effect on hover */
+    color: white;
 }
 
 #contact .icon {
-    width: 20px; /* Size of LinkedIn icon */
+    width: 20px;
     height: 20px;
-    vertical-align: middle; /* Align icon with text */
-    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 #skills {
-    color: green; /* Skills color */
+    color: green;
     font-weight: bold;
 }
