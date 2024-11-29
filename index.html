@@ -11,29 +11,29 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="intro">
-            <h1>Hi, My name is <span style="color: yellow;">Mona Jaiswal</span></h1>
-            <h2>I am proficient in <span id="skills" style="color: green;"></span></h2>
+            <h1>Hi, My name is <span class="highlight">Mona Jaiswal</span></h1>
+            <h2>I am proficient in <span id="skills"></span></h2>
             <div class="buttons">
-                <a href="MonaJaiswal_Resume.pdf" download>Download Resume</a>
-                <a href="https://github.com/Mona567" target="_blank">Visit GitHub</a>
+                <a href="MonaJaiswal_Resume.pdf" download class="btn">Download Resume</a>
+                <a href="https://github.com/Mona567" target="_blank" class="btn">Visit GitHub</a>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="content-section">
             <h2>About Me</h2>
             <p>I am a dedicated individual who enjoys taking on challenging projects that help me apply and enhance my skills. I am committed to continuous learning and always looking for opportunities to grow in the tech field.</p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="content-section">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Covid Vaccination Management System</h3>
@@ -45,13 +45,13 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="content-section">
             <h2>Contact Me</h2>
             <p>Feel free to reach out:</p>
             <p>📞 7992306324</p>
             <p>✉ <a href="mailto:monajaiswal1192000@gmail.com">monajaiswal1192000@gmail.com</a></p>
             <p>
-                <img src="linkedin-icon.png" alt="LinkedIn Icon" style="width: 16px; vertical-align: middle;">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" class="icon">
                 <a href="https://www.linkedin.com/in/mona-jaiswal-17372b1b6" target="_blank">LinkedIn Profile</a>
             </p>
         </section>

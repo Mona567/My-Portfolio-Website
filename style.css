@@ -1,85 +1,103 @@
-/* General Reset */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 1rem;
     text-align: center;
 }
 
-/* Navigation Bar */
-header nav ul {
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 10px;
-    background-color: #222;
+    padding: 0;
 }
 
-header nav ul li {
-    margin: 0 20px;
+nav ul li {
+    margin: 0 1rem;
 }
 
-header nav ul li a {
-    text-decoration: none;
+nav ul li a {
     color: lightblue;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     color: white;
 }
 
-/* Intro Section */
-.intro h1 {
-    font-size: 2.5em;
-    margin-top: 50px;
+.intro {
+    text-align: center;
+    padding: 3rem;
 }
 
-.intro h2 {
-    font-size: 1.8em;
-    margin: 20px 0;
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+h1 .highlight {
+    color: yellow;
 }
 
 .buttons {
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
-.buttons a {
+.btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #fff;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
     background-color: purple;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.buttons a:hover {
-    background-color: #fff;
-    color: purple;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.btn:hover {
+    background-color: #6a1b9a;
 }
 
-/* Sections */
-.hidden {
-    display: none;
-}
-
-section {
-    margin: 30px auto;
-    padding: 20px;
+.content-section {
+    display: none; /* Hidden by default */
+    padding: 2rem;
+    margin: 2rem auto;
     max-width: 800px;
 }
 
-/* Contact Section */
-.icon {
+#contact p {
+    margin-bottom: 0.5rem;
+}
+
+#contact p a {
+    color: lightblue;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact p a:hover {
+    color: white;
+}
+
+#contact .icon {
     width: 20px;
+    height: 20px;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 8px;
+}
+
+#skills {
+    color: green;
+    font-weight: bold;
 }

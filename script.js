@@ -1,4 +1,3 @@
-// Rotating skills
 const skills = [
     "Python", "Java", "SQL", "MySQL", "database management",
     "Flask", "HTML", "CSS", "Git", "GitHub", "DSA", "DBMS", "OOP"
@@ -11,20 +10,20 @@ function rotateSkills() {
     setTimeout(rotateSkills, 2000);
 }
 
-// Show specific sections
 function showSection(sectionId) {
-    const sections = document.querySelectorAll('main > section');
-    sections.forEach((section) => {
-        if (section.id === sectionId) {
-            section.classList.remove('hidden');
-        } else {
-            section.classList.add('hidden');
-        }
-    });
+    // Hide all sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.style.display = 'none');
+
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
 }
 
-// Initialize on page load
-window.onload = function() {
+// Show the About section by default
+window.onload = () => {
+    showSection('about');
     rotateSkills();
-    showSection('about'); // Default section to show
 };
